@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EmolanceHR</string>
+    <string-array name="type_array">
+        <item>Run</item>
+        <item>Walk</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Breakfast</item>
+        <item>Sleep</item>
+        <item>Speech</item>
+        <item>Discussion</item>
+    </string-array>
+</resources>

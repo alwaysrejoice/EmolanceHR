@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryBlue"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:text="--"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:textColor="@color/white"
+        android:id="@+id/heart_rate"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/love2"
+        android:id="@+id/heart_image"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp" />
+
+    <Button
+        android:text="stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:id="@+id/select_type"
+        android:entries="@array/type_array"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:text="disconnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/heart_image"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:text="Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/record"
+        app:layout_constraintBottom_toBottomOf="@+id/stop"
+        app:layout_constraintRight_toLeftOf="@+id/stop"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toTopOf="@+id/stop"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

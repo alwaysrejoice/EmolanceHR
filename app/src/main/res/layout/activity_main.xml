@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/activity_control_interface"
+        layout="@layout/control_interface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- A progress bar that will be shown to users to indicate that weather data is loading -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>
